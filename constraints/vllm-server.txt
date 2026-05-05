@@ -1,0 +1,3 @@
+# Install on the inference host, separately from the TRL training environment.
+# Release verified at https://pypi.org/project/vllm/0.20.1/
+vllm==0.20.1
