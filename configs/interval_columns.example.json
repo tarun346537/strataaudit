@@ -1,0 +1,8 @@
+{
+  "world_id": "region_id",
+  "borehole_id": "hole_id",
+  "x": "easting",
+  "top_depth": "interval_top_m",
+  "bottom_depth": "interval_bottom_m",
+  "lithology": "lithology_name"
+}
