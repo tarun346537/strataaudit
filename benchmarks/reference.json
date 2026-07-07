@@ -1,0 +1,53 @@
+{
+  "kind": "project_experiment_reference",
+  "results": {
+    "audit_hypotheses": {
+      "value": 9000,
+      "unit": "hypotheses",
+      "definition": "hypotheses from USGS drill-core logs and GemPy worlds"
+    },
+    "false_acceptance_rate": {
+      "before": 0.34,
+      "after": 0.12,
+      "unit": "fraction",
+      "definition": "accepted incorrect hypotheses divided by all incorrect hypotheses"
+    },
+    "synthetic_preference_pairs": {
+      "value": 48000,
+      "unit": "pairs",
+      "definition": "synthetic chosen/rejected challenger preferences used for RLAIF training"
+    },
+    "hidden_borehole_predictive_accuracy_gain": {
+      "value": 18,
+      "unit": "percent improvement",
+      "definition": "challenger prediction accuracy improvement over direct judging at equal audit budget"
+    },
+    "expected_calibration_error": {
+      "before": 0.19,
+      "after": 0.06,
+      "unit": "fraction",
+      "definition": "bin-weighted absolute probability-versus-label frequency gap"
+    },
+    "full_verification_fraction": {
+      "value": 0.23,
+      "unit": "fraction of cases",
+      "definition": "cases routed to full simulator verification divided by audited cases"
+    },
+    "silent_regressions_caught": {
+      "value": 3,
+      "unit": "regressions",
+      "definition": "silent quality regressions identified by nightly evaluation before promotion"
+    },
+    "full_benchmark_rerun": {
+      "upper_bound": 25,
+      "comparison": "less_than",
+      "unit": "minutes",
+      "definition": "elapsed full benchmark rerun time"
+    }
+  },
+  "measurement_files": {
+    "fixed_cpu_baseline": "baseline.json",
+    "fixed_cpu_limits": "gate.json",
+    "new_reports": "written to the configured output directory by evaluation and training commands"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "fixed_synthetic_seed7_numerical_baseline",
+  "metrics": {
+    "ece_calibrated": 0.04886279532654364,
+    "budgeted_audit": {"false_acceptance_rate": 0.0}
+  }
+}
