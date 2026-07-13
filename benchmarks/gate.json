@@ -1,0 +1,12 @@
+{
+  "description": "Fixed numerical audit with thresholds for software regressions",
+  "benchmark": {"seed": 7, "worlds": 180, "budget": 0.25},
+  "thresholds": {
+    "metrics.ece_calibrated": {"max": 0.08, "maximum_increase": 0.02},
+    "metrics.budgeted_audit.false_acceptance_rate": {"max": 0.03, "maximum_increase": 0.02},
+    "metrics.budgeted_audit.accuracy": {"min": 0.96},
+    "metrics.online_verification_fraction": {"max": 0.25},
+    "metrics.cases": {"min": 144, "max": 144},
+    "runtime_seconds": {"max": 120}
+  }
+}
