@@ -54,12 +54,11 @@ LoRA keeps challenger updates small, while model-judged preference pairs provide
 | RLAIF | Preference-learning method | Supervision from an independent model judge |
 | LoRA / PEFT | PEFT 0.19.1 | Challenger adapter training and loading |
 | vLLM | 0.20.1, separate serving environment | Structured judge and challenger inference |
-| GemPy / engine | 2025.2.0 / 2025.2.0 | Geological worlds and sampled boreholes |
+| GemPy | 2025.2.0 | Geological worlds and sampled boreholes |
 | USGS drill-core logs | Release-specific provenance | Sourced interval observations |
-| Transformers / Datasets / Accelerate | 5.7.0 / 4.8.5 / 1.13.0 | Tokenization, training data and GPU launch |
+| Transformers / Datasets | 5.7.0 / 4.8.5 | Tokenization and training data |
 | NumPy | 2.4.4 | Inspectable evidence baseline and numerical reference |
 | GitHub Actions | Ubuntu 24.04, pinned action commits | Nightly tests and regression gates |
-| pytest / Ruff / mypy | 9.0.3 / 0.15.12 / 1.20.2 | Tests, formatting, lint and strict type checks |
 
 Direct research dependencies are pinned in [pyproject.toml](pyproject.toml) and [constraints/research.txt](constraints/research.txt). The vLLM host uses its own [requirements](constraints/vllm-server.txt).
 
